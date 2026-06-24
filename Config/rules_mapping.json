@@ -1,1 +1,25 @@
-
+{
+  "keywords": [
+    {
+      "pattern": "invalid user|non-existent user|user enumeration",
+      "technique": "T1087",
+      "subtechnique": null,
+      "confidence": 0.92,
+      "reason": "Detecção de tentativa de autenticação com usuário inexistente indica enumeração de contas."
+    },
+    {
+      "pattern": "failed password|authentication failed|brute force",
+      "technique": "T1110",
+      "subtechnique": "T1110.001",
+      "confidence": 0.85,
+      "reason": "Falhas consecutivas de senha indicam possíveis ataques de força bruta (Password Guessing)."
+    },
+    {
+      "pattern": "successful login.*root|accepted password for root",
+      "technique": "T1078",
+      "subtechnique": "T1078.003",
+      "confidence": 0.90,
+      "reason": "Acesso administrativo via contas locais (root) detectado."
+    }
+  ]
+}
