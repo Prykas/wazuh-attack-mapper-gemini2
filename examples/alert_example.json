@@ -1,1 +1,8 @@
-
+{
+  "rule": {
+    "id": "5710",
+    "description": "Attempt to login using a non-existent user"
+  },
+  "srcip": "138.68.61.2",
+  "full_log": "Failed password for invalid user root"
+}
