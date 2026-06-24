@@ -1,1 +1,6 @@
-
+<group name="linux,sshd,">
+  <rule id="5710" level="5">
+    <description>Attempt to login using a non-existent user</description>
+    <group>invalid_logins,</group>
+  </rule>
+</group>
